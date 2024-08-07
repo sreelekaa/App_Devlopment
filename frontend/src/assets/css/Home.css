@@ -1,0 +1,131 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-section {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5);
+}
+
+.book-now-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #131212;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+}
+
+.features-section, .testimonials-section, .cta-section {
+    padding: 20px;
+    background-color: white;
+    color:#080908;
+    text-align: center;
+    
+}
+.features-section, .testimonials-section{
+background-image: url('../images/whitebg.jpg');
+}
+.cta-section {
+    background-color: white;
+    color: #333;
+}
+
+.cta-section p {
+    color: #333;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+}
+.card-container .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card-container .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 300px; /* Flex properties to ensure responsive layout */
+    max-width: 300px;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.card p {
+    color: #666;
+}
+
+.cta-button {
+    background-color: #080908; /* Dark background */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px; /* Rounded corners */
+    width: 200px;
+}
+
+.footer {
+    background: gainsboro;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-top: 1px solid white;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+    backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+}
+
+.footer p {
+    color: #000;
+}
+
+body {
+    overflow-y: scroll;
+}

@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.login-page, .register-page {
+    background-image: url('../images/bg2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start; /* Align items to the start of the flex container */
+    align-items: center;
+    padding-left: 50px; /* Add padding to create space from the left edge */
+}
+
+.login-body, .register-body {
+    background-color: gainsboro; /* White-glass transparent background */
+    backdrop-filter: blur(50px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-body {
+    max-width: 300px;
+}
+
+.login-main, .register-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #0A0A23;
+}
+
+p {
+    color: #0A0A23;
+    margin: 10px 0;
+    align-self: start;
+}
+
+input[type='text'], input[type='password'] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #0A0A23;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: white;
+    color: #0A0A23;
+}
+
+button {
+    background-color: #4DA8DA; /* Unique blue color for button */
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3a8bbd;
+}
+
+.errP, small {
+    color: #FF6B6B;
+}
+
+a {
+    color: #4DA8DA;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+span {
+    color: #4DA8DA;
+    cursor: pointer;
+}
+
+span:hover {
+    text-decoration: underline;
+}

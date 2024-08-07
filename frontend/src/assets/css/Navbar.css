@@ -1,0 +1,126 @@
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    z-index: 1000;
+    color: #333;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    /* overflow: hidden; */
+}
+
+/* Logo container styling */
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem; /* Adjust if your logo includes text */
+    font-weight: bold;
+    color: #333;
+}
+
+/* Logo image styling */
+.logo-img {
+    width: 40px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between logo image and text, if any */
+    background: transparent; /* Ensure the background is transparent */
+}
+
+/* Links styling */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    justify-content: flex-end; /* Align items to the right */
+    margin-right: 35px; /* Adjust as needed */
+}
+
+.navbar-links li {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+
+/* Profile icon styling */
+.profile-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+}
+
+.dropdown-menu a, .dropdown-menu button {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #333;
+    text-decoration: none;
+    background: none;
+    border: none;
+    text-align: left;
+}
+
+.dropdown-menu a:hover, .dropdown-menu button:hover {
+    background: #f0f0f0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    .navbar-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        margin-left: 0;
+    }
+}
